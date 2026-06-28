@@ -143,9 +143,9 @@ If you build something with it, a star ⭐ is always appreciated.
  
 ---
  
-## 🙋 Contact
+## 🙋 Contact: lilian.acosta@edtechrd.com
  
-Built by **[Your Name]**  
+Built by **Lilian Acosta**  
 Questions or feedback → open an [Issue](https://github.com/yourusername/bloom-sort/issues)
  
 <div align="center">
