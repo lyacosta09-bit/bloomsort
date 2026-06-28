@@ -1,0 +1,12 @@
+{
+  "appId": "com.lyacosta.bloomsort",
+  "appName": "Bloom Sort",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "AdMob": {
+      "appIdAndroid": "ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY",
+      "appIdIos": "ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY"
+    }
+  }
+}
