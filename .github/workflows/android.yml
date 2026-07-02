@@ -50,7 +50,7 @@ jobs:
 
       - name: Build release AAB
         working-directory: android
-        run: ./gradlew bundleRelease -Pandroid.injected.signing.store.file=$(pwd)/app/bloom-sort.jks -Pandroid.injected.signing.store.password=${{ secrets.ANDROID_KEYSTORE_PASSWORD }} -Pandroid.injected.signing.key.alias=${{ secrets.ANDROID_KEY_ALIAS }} -Pandroid.injected.signing.key.password=${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: ./gradlew bundleRelease -Pandroid.injected.signing.store.file=$(pwd)/app/bloom-sort.jks -Pandroid.injected.signing.store.password=${{ secrets.ANDROID_KEYSTORE_PASSWORD }} -Pandroid.injected.signing.key.alias=${{ secrets.ANDROID_KEY_ALIAS }} -Pandroid.injected.signing.key.password=${{ secrets.ANDROID_KEY_PASSWORD }} -Pandroid.injected.version.code=2 -Pandroid.injected.version.name=1.0.0
 
       - name: Upload AAB
         uses: actions/upload-artifact@v4
