@@ -34,6 +34,9 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Remove existing Android folder if present
+        run: rm -rf android
+
       - name: Generate Android project
         run: |
           npx cap add android
