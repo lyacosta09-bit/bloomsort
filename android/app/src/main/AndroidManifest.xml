@@ -3,11 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.lyacosta.bloomsort">
 
-    <!-- Permisos de internet para AdMob y Capacitor -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <!-- Permiso requerido para ID de publicidad en Android 13+ -->
     <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
 
     <application
@@ -21,7 +18,7 @@
         android:usesCleartextTraffic="false"
         tools:targetApi="31">
 
-        <!-- Tu App ID de AdMob — reemplaza con el tuyo real -->
+        <!-- ✅ YOUR REAL ADMOB APP ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-4027849390139262~4474369537" />
