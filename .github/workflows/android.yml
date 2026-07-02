@@ -19,13 +19,10 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Install Capacitor CLI
         run: npm install -g @capacitor/cli@6.1.0
-
-      - name: Install Capacitor Android 6
-        run: npm install @capacitor/android@6.1.0 @capacitor/core@6.1.0
 
       - name: Set up Java
         uses: actions/setup-java@v4
