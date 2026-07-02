@@ -5,7 +5,7 @@
   "bundledWebRuntime": false,
   "plugins": {
     "AdMob": {
-      "appIdAndroid": "ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY",
+      "appIdAndroid": "ca-app-pub-4027849390139262~4474369537",
       "appIdIos": "ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY"
     }
   }
