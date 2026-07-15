@@ -54,7 +54,6 @@ jobs:
           with open('android/app/src/main/AndroidManifest.xml', 'r') as f:
               content = f.read()
 
-          # Only inject if not already there
           if 'com.google.android.gms.ads.APPLICATION_ID' not in content:
               admob = """
           <meta-data
@@ -86,7 +85,6 @@ jobs:
           python3 << 'PYEOF'
           import re, os
 
-          # Patch variables.gradle (controls SDK versions in Capacitor 6)
           vfile = 'android/variables.gradle'
           if os.path.exists(vfile):
               with open(vfile, 'r') as f:
@@ -100,13 +98,12 @@ jobs:
                   f.write(v)
               print("variables.gradle AFTER:\n", v)
 
-          # Patch app/build.gradle (controls versionCode and backup SDK refs)
           bfile = 'android/app/build.gradle'
           with open(bfile, 'r') as f:
               b = f.read()
           print("build.gradle BEFORE:\n", b)
           b = re.sub(r'(versionCode\s+)\d+', r'\g<1>9', b)
-          b = re.sub(r'(versionName\s+")[^"]*"', r'\g<1>1.0.0"', b)
+          b = re.sub(r'(versionName\s+")[^"]*"', r'\g<1>1.0.1"', b)
           b = re.sub(r'(compileSdkVersion\s+)\d+', r'\g<1>35', b)
           b = re.sub(r'(compileSdk\s+)\d+', r'\g<1>35', b)
           b = re.sub(r'(targetSdkVersion\s+)\d+', r'\g<1>35', b)
