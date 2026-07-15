@@ -105,7 +105,7 @@ jobs:
           with open(bfile, 'r') as f:
               b = f.read()
           print("build.gradle BEFORE:\n", b)
-          b = re.sub(r'(versionCode\s+)\d+', r'\g<1>8', b)
+          b = re.sub(r'(versionCode\s+)\d+', r'\g<1>9', b)
           b = re.sub(r'(versionName\s+")[^"]*"', r'\g<1>1.0.0"', b)
           b = re.sub(r'(compileSdkVersion\s+)\d+', r'\g<1>35', b)
           b = re.sub(r'(compileSdk\s+)\d+', r'\g<1>35', b)
